@@ -14,9 +14,9 @@
             <span class="text-border">front-end🎨</span>
             development.
           </p>
-
+          <Email :loopMessage="true" />
           <div class="flex items-center gap-5 text-dimGrey">
-            <p>Find me on:</p>
+            <p>Also on:</p>
 
             <a href="https://github.com/dev-adewale" target="_blank">
               <app-icon icon="fab fa-github" size="lg"></app-icon>
@@ -147,13 +147,15 @@
 <script>
 import Tab from '../components/Tab.vue'
 import Tabs from '../components/Tabs.vue'
+import Email from '../components/Email.vue'
 export default {
   metaInfo: {
     title: "Full-Stack Dev 🤹",
   },
   components: {
     Tab,
-    Tabs
+    Tabs,
+    Email
   },
   data () {
     return {
