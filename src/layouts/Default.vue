@@ -1,11 +1,7 @@
 <template>
   <div>
-    <header class="contain flex justify-between items-center h-40">
-      <h1 class="text-3xl text-dimGrey font-bold">
-        <g-link to="/">🚀Adex</g-link>
-      </h1>
-
-      <nav class="hidden md:flex items-center gap-3 text-green">
+    <header class="contain flex justify-between items-center h-20">
+      <nav class="hidden md:flex items-center gap-3 text-green ml-auto">
         <g-link
           class="hover:underline border-r-2 border-dashed border-green pr-4"
           to="/"

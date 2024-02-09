@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <transition name="fade" appear>
-      <main class="mt-14 mb-14">
+      <main class="mt-1 mb-14">
         <div class="contain flex flex-col gap-7">
           <h1 class="font-semibold text-4xl">Hey 👋, I'm Adex.</h1>
           <p class="text-dimGrey leading-8">
