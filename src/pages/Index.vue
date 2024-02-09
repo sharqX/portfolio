@@ -79,7 +79,32 @@
           <tabs :mode="mode">
             <tab title="tab title" position="engg" company="qad" companyURL="ff" :itemList="itemList"/>
           </tabs>
-          <button class='change__style'>Download CV</button>   
+
+
+<div style="margin-top: 10px; align-self: flex-start; display: flex; align-items: flex-end;">
+  <button style="background-color: #2BBC89;
+                 border: none;
+                 color: white;
+                 padding: 10px 20px;
+                 text-align: center;
+                 text-decoration: none;
+                 font-size: 16px;
+                 cursor: pointer;">Download Full CV
+  </button>   
+
+  <span style="display: none; margin-left: 10px;
+               font-size: 12px;
+               color: #2BBC89; 
+               position: relative;
+               bottom: 2px;
+               line-height: 1;
+               font-size: 10px;">Know more
+  </span>
+</div>
+
+
+
+  
         </div>
 
 
