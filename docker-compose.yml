@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  my-portfolio:
+    build: .
+    container_name: my-portfolio
+    volumes:
+      - ./src:/app/src
+      - ./static:/app/static
+      - ./content:/app/content
+    ports:
+      - "8080:8080"
+    command: gridsome develop
