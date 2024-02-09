@@ -87,7 +87,7 @@ ul.tabs__header > li.tab__selected {
 
   .tab {
     color: white;
-    padding: 20px;
+    padding: 12px;
     border-radius: 10px;
     min-height: 100px; /*//tweak*/ 
   }

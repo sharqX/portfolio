@@ -37,15 +37,6 @@
               <app-icon icon="at" size="lg"></app-icon>
             </a>
           </div>
-          <div class='wrapper'>
-            <tabs :mode="mode">
-              <tab title="Tab 1">Hello From Tab 1</tab>
-              <tab title="Tab 2">Hello From Tab 2</tab>
-              <tab title="Tab 3">Hello From Tab 3</tab>
-              <tab title="Tab 4">Hello From Tab 4</tab>
-            </tabs>
-            <button class='change__style'>Download CV</button>
-          </div>
         </div>
 
         <!-- Article List Section -->
@@ -79,6 +70,16 @@
             </g-link>
           </article>
         </div>
+
+        <!-- Work Experience Section -->
+        <div class="contain mt-16 flex flex-col gap-3">
+          <h2 class="text-xl font-semibold">Work Highlights</h2>
+          <tabs :mode="mode">
+            <tab title="tab title" position="engg" company="qad" companyURL="ff" :itemList="itemList"/>
+          </tabs>
+          <button class='change__style'>Download CV</button>   
+        </div>
+
 
         <!-- Technologies List Section -->
         <div class="contain mt-16">
@@ -159,7 +160,8 @@ export default {
   },
   data () {
     return {
-      mode: 'dark'
+      mode: 'dark',
+      itemList: ['Item 1', 'Item 2', 'Item 3'],
     }
   },
   methods: {
