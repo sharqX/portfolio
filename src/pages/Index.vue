@@ -4,32 +4,29 @@
       <main class="mt-1 mb-14">
         <div class="contain flex flex-col gap-7">
           <h1 class="font-semibold text-4xl">
-            Hey <span class="wave">👋</span>, I'm Jay
+            Hey <span class="wave" @click="startAnimation">👋</span>, I'm Jay
           </h1>
           <p class="text-dimGrey leading-8">
-            I'm a full stack developer who loves to craft
-            <span class="text-border">interactive designs✨</span>
-            with modern web technologies. Currently learning backend and
-            databases (<span class="text-border">Go🧩</span>,
-            <span class="text-border">MongoDB🍃</span>) while also solidifying
-            my already acquired knowledge of
-            <span class="text-border">front-end🎨</span>
-            development.
+            I'm a Backend and Cloud Engineer who thrives to crafte solutions that are both simple and elegant. 
+            I leverage a diverse array of technologies and tools (including AI) to solve the problem at hand.
+            I have worked with many teams, small and large, across the globe to solve some of the most complex challenges in tech.
+            I'm a <span class="text-border">10x Engineer</span> who is on the journey to set new benchmarks of excellence!
+            
           </p>
           <Email :loopMessage="true" />
           <div class="flex items-center gap-5 text-dimGrey">
             <p>Also on:</p>
 
-            <a href="https://github.com/dev-adewale" target="_blank">
+            <a href="https://github.com/jbhv12" target="_blank">
               <app-icon icon="fab fa-github" size="lg"></app-icon>
             </a>
 
-            <a href="https://twitter.com/dev_adeyemi" target="_blank">
+            <a href="https://twitter.com/jbhv12" target="_blank">
               <app-icon icon="fab fa-twitter" size="lg"></app-icon>
             </a>
 
             <a
-              href="https://discordapp.com/users/dev_adeyemi#1401"
+              href="https://discordapp.com/users/apesnape"
               target="_blank"
             >
               <app-icon icon="fab fa-discord" size="lg"></app-icon>
