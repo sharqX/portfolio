@@ -40,34 +40,25 @@
 
         <!-- Article List Section -->
         <div class="contain mt-16 flex flex-col gap-3">
-          <g-link to="/articles" class="font-semibold text-xl">
+          <a href="https://dev.to/jbhv12" target="_blank" class="font-semibold text-xl">
             Posts
             <app-icon class="text-dimGrey" icon="link" size="sm"></app-icon>
-          </g-link>
-          <article
-            class="
-              flex
-              md:flex-row
-              flex-col
-              md:items-center
-              items-start
-              md:gap-10
-              gap-0
-              md:pb-3
-              pb-5
-            "
-            v-for="edge in $page.posts.edges"
-            :key="edge.node.id"
-          >
-            <p class="text-dimGreyAlt">{{ edge.node.date }}</p>
-
-            <g-link
-              :to="edge.node.path"
-              class="text-dimGrey decoration-cuppy underline underline-offset-4"
-            >
-              {{ edge.node.title }}
-            </g-link>
-          </article>
+          </a>
+          <div class="flex flex-col gap-3">
+            <article class="flex md:flex-row flex-col md:items-center items-start md:gap-10 gap-0 md:pb-3 pb-5">
+              <p class="text-dimGreyAlt">09 Feb 2024</p>
+              <a href="https://dev.to/jbhv12/oauth-terms-explained-in-one-sentence-2all" class="text-dimGrey decoration-cuppy underline underline-offset-4">
+                OAuth Terms Explained in One Sentence
+              </a>
+            </article>
+            
+            <article class="flex md:flex-row flex-col md:items-center items-start md:gap-10 gap-0 md:pb-3 pb-5">
+              <p class="text-dimGreyAlt">09 Feb 2024</p>
+              <a href="https://dev.to/jbhv12/red-jingles-a-holiday-theme-based-ai-chatbot-5fl8" class="text-dimGrey decoration-cuppy underline underline-offset-4">
+                Scaling Cheer: A Deep Dive into the Architecture of Red Jingles AI Chatbot
+              </a>
+            </article>
+          </div>
         </div>
 
         <!-- Work Experience Section -->
