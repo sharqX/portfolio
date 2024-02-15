@@ -8,6 +8,7 @@ services:
       - ./src:/app/src
       - ./static:/app/static
       - ./content:/app/content
+      - ./dist:/app/dist
     ports:
-      - "8080:8080"
+      - "8082:8080"
     command: gridsome develop
