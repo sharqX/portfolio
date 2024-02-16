@@ -79,9 +79,9 @@
 
 
 <div style="margin-top: 10px; align-self: flex-start; display: flex; align-items: flex-end;">
-  <button style="background-color: #2BBC89;
+  <button style="background-color: #00B300;
                  border: none;
-                 color: white;
+                 color: black;
                  padding: 10px 20px;
                  text-align: center;
                  text-decoration: none;
@@ -91,7 +91,7 @@
 
   <span style="display: none; margin-left: 10px;
                font-size: 12px;
-               color: #2BBC89; 
+               color: #00FF52; 
                position: relative;
                bottom: 2px;
                line-height: 1;
@@ -108,60 +108,9 @@
         <!-- Technologies List Section -->
         <div class="contain mt-16">
           <div class="mb-5">
-            <h2 class="text-xl font-semibold">Technologies</h2>
-            <p class="mt-5">Here's a list of my tech stacks 👇:</p>
-          </div>
-
-          <div
-            class="text-dimGrey flex flex-col gap-5 md:leading-none leading-8"
-          >
-            <p>
-              <app-icon class="pr-2" icon="fab fa-js" size="lg"></app-icon>
-              <span class="decoration-cuppy underline underline-offset-4"
-                >JavaScript/TypeScript:</span
-              >
-              A scripting language for web page interactivity
-            </p>
-
-            <p>
-              <app-icon class="pr-2" icon="fab fa-css3" size="lg"></app-icon>
-              <span class="decoration-cuppy underline underline-offset-4"
-                >SCSS/Tailwind CSS:</span
-              >
-              To beautify web pages
-            </p>
-
-            <p>
-              <app-icon class="pr-2" icon="fab fa-vuejs" size="lg"></app-icon>
-              <span class="decoration-cuppy underline underline-offset-4"
-                >Vue/Nuxt:</span
-              >
-              An advanced MVVM front-end framework
-            </p>
-
-            <p>
-              <app-icon class="pr-2" icon="fab fa-node" size="lg"></app-icon>
-              <span class="decoration-cuppy underline underline-offset-4"
-                >Node:</span
-              >
-              A cross-platfom open source server environment
-            </p>
-
-            <p>
-              <app-icon class="pr-2" icon="fab fa-golang" size="lg"></app-icon>
-              <span class="decoration-cuppy underline underline-offset-4"
-                >Go:</span
-              >
-              A statically typed and compiled language for backend
-            </p>
-
-            <p>
-              <app-icon class="pr-2" icon="database" size="lg"></app-icon>
-              <span class="decoration-cuppy underline underline-offset-4"
-                >MongoDB:</span
-              >
-              A document database that stores data in BSON format
-            </p>
+            <h2 class="text-xl font-semibold">Lets's Connect!</h2>
+            <p class="mt-5">Feel free to reach out. Shoot me an <a href="mailto:hi@jay-is-savvy.dev" class="decoration-cuppy underline underline-offset-4">email</a> or <a href="https://calendly.com/jbhv12" class="decoration-cuppy underline underline-offset-4">schedule a call</a>.</p>
+            <p class="mt-5">Looking for mentorship? Connect with me on <a href="https://adplist.org/mentors/jay-bhavsar" class="decoration-cuppy underline underline-offset-4">ADPList</a> — it's free!</p>
           </div>
         </div>
       </main>
@@ -175,7 +124,7 @@ import Tabs from '../components/Tabs.vue'
 import Email from '../components/Email.vue'
 export default {
   metaInfo: {
-    title: "Backend and Cloud Engineer 🤹",
+    title: "Jay the Savvy Dev",
   },
   components: {
     Tab,
