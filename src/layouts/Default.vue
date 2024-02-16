@@ -21,7 +21,7 @@
     <slot />
 
     <footer class="contain flex justify-between mb-5 text-sl text-dimGreyAlt">
-      <p>Copyright © 2022 🚀</p>
+      <p>Copyright © 2024 🚀</p>
     </footer>
   </div>
 </template>
