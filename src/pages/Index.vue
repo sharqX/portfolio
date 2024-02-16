@@ -11,11 +11,16 @@
             I leverage a diverse array of technologies and tools (including AI) to solve the problem at hand.
             I have worked with many teams, small and large, across the globe to solve some of the most complex challenges in tech.
             I'm a <span class="text-border">10x Engineer</span> who is on the journey to set new benchmarks of excellence!
+            My email is:
             
           </p>
           <Email :loopMessage="true" />
           <div class="flex items-center gap-5 text-dimGrey">
             <p>Also on:</p>
+
+            <a href="https://www.linkedin.com/in/jbhv12" target="_blank">
+                <app-icon icon="fab fa-linkedin" size="lg"></app-icon>
+            </a>
 
             <a href="https://github.com/jbhv12" target="_blank">
               <app-icon icon="fab fa-github" size="lg"></app-icon>
