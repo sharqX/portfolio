@@ -1,35 +1,7 @@
 <template>
   <div>
     <header class="contain flex justify-between items-center h-20">
-      <nav class="hidden md:flex items-center gap-3 text-green ml-auto">
-        <g-link
-          class="hover:underline border-r-2 border-dashed border-green pr-4"
-          to="/"
-          >Home</g-link
-        >
-        <g-link class="hover:underline" to="/projects/">Projects</g-link>
-        <g-link
-          class="hover:underline border-l-2 border-dashed border-green pl-4"
-          to="/articles/"
-          >Articles</g-link
-        >
-      </nav>
-      <div class="md:hidden block">
-        <app-icon
-          @click="
-            () => {
-              showMenu = !showMenu;
-            }
-          "
-          class="cursor-pointer"
-          icon="bars"
-          size="lg"
-        ></app-icon>
-      </div>
     </header>
-
-    <!-- Mobile Nav -->
-
     <header
       :class="[showMenu ? 'hidden' : 'fixed']"
       class="
@@ -45,28 +17,11 @@
         right-0
       "
     >
-      <nav
-        class="w-11/12 mx-auto flex flex-col items-end gap-3 text-green pt-3"
-      >
-        <g-link to="/">Home</g-link>
-        <g-link to="/projects/">Projects</g-link>
-        <g-link to="/articles/">Articles</g-link>
-      </nav>
     </header>
-
-    <!-- Mobile Nav Ends -->
-
     <slot />
 
     <footer class="contain flex justify-between mb-5 text-sl text-dimGreyAlt">
       <p>Copyright © 2022 🚀</p>
-
-      <nav>
-        <a href="/rss.xml" target="_blank">
-          RSS
-          <app-icon icon="rss" size="sm"></app-icon>
-        </a>
-      </nav>
     </footer>
   </div>
 </template>
