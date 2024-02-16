@@ -86,16 +86,18 @@
                  text-align: center;
                  text-decoration: none;
                  font-size: 16px;
-                 cursor: pointer;">Download Full CV
+                 cursor: pointer;">
+    <a href="https://github.com/jbhv12/resume/releases/download/latest/jay-cv.pdf" style="color: black; text-decoration: none;">Download Full CV</a>
   </button>   
 
-  <span style="display: none; margin-left: 10px;
+  <span style="margin-left: 10px;
                font-size: 12px;
                color: #00FF52; 
                position: relative;
                bottom: 2px;
                line-height: 1;
-               font-size: 10px;">Know more
+               font-size: 12px;"> 
+    <a href="https://github.com/jbhv12/resume" target="_blank">See how it's generated!</a>
   </span>
 </div>
 
