@@ -58,7 +58,7 @@
             </article>
             
             <article class="flex md:flex-row flex-col md:items-center items-start md:gap-10 gap-0 md:pb-3 pb-5">
-              <p class="text-dimGreyAlt">09 Feb 2024</p>
+              <p class="text-dimGreyAlt">15 Dec 2023</p>
               <a href="https://dev.to/jbhv12/red-jingles-a-holiday-theme-based-ai-chatbot-5fl8" class="text-dimGrey decoration-cuppy underline underline-offset-4">
                 Scaling Cheer: A Deep Dive into the Architecture of Red Jingles AI Chatbot
               </a>
@@ -70,7 +70,11 @@
         <div class="contain mt-16 flex flex-col gap-3">
           <h2 class="text-xl font-semibold">Work Highlights</h2>
           <tabs :mode="mode">
-            <tab title="tab title" position="engg" company="qad" companyURL="ff" :itemList="itemList"/>
+            <tab title="Haiku" position="Lead Cloud Architect and Backend Engineer" company="Haiku" companyURL="https://haikuinc.io/" :itemList="haikuItemList"/>
+            <tab title="QAD" position="Principal Software Engineer" company="QAD" companyURL="https://qad.com/" :itemList="qadItemList"/>
+            <tab title="Media.net" position="Senior Software Engineer" company="Media.net" companyURL="https://www.media.net/" :itemList="mnetItemList"/>
+            <tab title="Taskit" position="Backend Developer" company="Taskit" companyURL="https://task.it/" :itemList="taskitItemList"/>
+            <tab title="TCS" position="Research Engineer" company="TCS" companyURL="https://tcs.com/" :itemList="tcsItemList"/>
           </tabs>
 
 
@@ -171,7 +175,7 @@ import Tabs from '../components/Tabs.vue'
 import Email from '../components/Email.vue'
 export default {
   metaInfo: {
-    title: "Full-Stack Dev 🤹",
+    title: "Backend and Cloud Engineer 🤹",
   },
   components: {
     Tab,
@@ -181,7 +185,30 @@ export default {
   data () {
     return {
       mode: 'dark',
-      itemList: ['Item 1', 'Item 2', 'Item 3'],
+      qadItemList: [
+        'Led agile team to develop a robust SaaS product using serverless technologies',
+        'Led the end-to-end development, and maintenance of high-performance Java microservices to optimize imports entry creation and declaration processes',
+        'Responsible for migrating legacy software systems to a scalable Software-as-a-Service (SaaS) architecture, leveraging AWS'
+      ],
+      mnetItemList: [
+        'Simplified and maintained a large-scale data-intensive application for powering 300+ million internet ads daily',
+        'Administered server-side header bidding platforms, providing Media.net with a competitive market edge and maximizing revenue for 21000+ publishers',
+        'Engineered caching technologies (MySQL, Redis, Caffeine Cache, Varnish, Akamai) for impressive QPS of 15000 and a 99th percentile response time under 10ms'
+      ],
+      haikuItemList: [
+        'Responsible for designing and implementing a game play solution in Kubernetes (AWS EKS), achieving an 80% reduction in game load time, from approximately 27 seconds to around 5 seconds',
+        'Fixed, optimized, and deployed many games that help students make a career in cybersecurity. These games provide a Kali Linux cloud computer on demand and simulate vulnerable software',
+        'Led the creation and implementation of a dynamic lab environment for university students, designed to simulate a vulnerable small business network. This was hosted on AWS, offering features such as on-demand creation, destruction, and secure access via VPN'
+      ],
+      taskitItemList: [
+        'Implemented a scheduling algorithm from scratch, achieving zero error rate and capacity to handle millions of users',
+        'Leveraged the Google Cloud platform (including App Engine, Cloud Tasks, Cloud Run, Cloud Scheduler, and other advanced tools) to deploy the service, scale up performance, and reducing operational costs by 70%',
+        'Overhauled the code formatting, testing, and deployment processes with the implementation of GitHub Actions pipelines, saving 10+ hours of developer time every week'
+      ],
+      tcsItemList: [
+        'Orchestrated a real-time, large-scale security analysis platform by leveraging open source big data tools and analytical expertise, while reporting directly to the Global Head of the Cyber Security Unit',
+        'Developed a robust threat intelligence platform using Apache Metron, Kafka, Storm and Elasticsearch, resulting in a 40% reduction in false positives',
+      ],
     }
   },
   methods: {
