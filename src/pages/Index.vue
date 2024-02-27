@@ -7,7 +7,7 @@
             Hey <span class="wave" @click="startAnimation">👋</span>, I'm Jay
           </h1>
           <p class="text-dimGrey leading-8">
-            I'm a Backend and Cloud Engineer who thrives to crafte solutions that are both simple and elegant. 
+            I'm a Backend and Cloud Engineer who thrives to craft solutions that are both simple and elegant. 
             I leverage a diverse array of technologies and tools (including AI) to solve the problem at hand.
             I have worked with many teams, small and large, across the globe to solve some of the most complex challenges in tech.
             I'm a <span class="text-border">10x Engineer</span> who is on the journey to set new benchmarks of excellence!
