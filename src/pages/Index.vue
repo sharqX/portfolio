@@ -162,6 +162,25 @@ export default {
       ],
     }
   },
+  mounted() {
+    const script = document.createElement('script');
+    script.async = true;
+    script.type = 'text/javascript';
+    script.src = 'https://static.senja.io/dist/platform.js';
+    document.body.appendChild(script);
+
+    // Google Analytics script
+    const analyticsScript = document.createElement('script');
+    analyticsScript.async = true;
+    analyticsScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-83T283YBYQ';
+    document.head.appendChild(analyticsScript);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-83T283YBYQ');
+  },
   methods: {
     changeStyle () {
       if (this.mode === 'dark') {
