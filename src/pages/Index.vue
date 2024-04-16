@@ -65,7 +65,7 @@
             </article>
 
              <article class="flex md:flex-row flex-col md:items-center items-start md:gap-10 gap-0 md:pb-3 pb-5">
-              <p class="text-dimGreyAlt">15 Dec 2023</p>
+              <p class="text-dimGreyAlt">04 Apr 2024</p>
               <a href="https://dev.to/jbhv12/inversion-of-control-ioc-demystifying-the-familiar-pattern-2003" class="text-dimGrey decoration-cuppy underline underline-offset-4">
                 Inversion of Control (IoC): Demystifying the Familiar Pattern
               </a>
