@@ -105,7 +105,7 @@
                bottom: 2px;
                line-height: 1;
                font-size: 12px;"> 
-    <a href="https://github.com/jbhv12/resume" target="_blank">See how it's generated!</a>
+    <!-- <a href="https://github.com/jbhv12/resume" target="_blank">See how it's generated!</a> -->
   </span>
 </div>
 
