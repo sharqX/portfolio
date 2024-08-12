@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build static site
-        run: docker-compose run my-portfolio gridsome build
+        run: docker compose run my-portfolio gridsome build
 
       - name: Publish to Cloudflare Pages
         uses: jbhv12/pages-action@v2
