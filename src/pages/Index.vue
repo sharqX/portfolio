@@ -114,9 +114,14 @@
   
         </div>
 
+        <div class="contain mt-16" style="width: 100%; margin: 60px 0 0 0;">
+          <div class="mb-5" style="margin: 0;">
+            <div class="senja-embed" data-id="c852e66c-9a22-40c8-8a9f-8039ccc00a18" data-lazyload="false"></div>
+          </div>
+        </div>
 
         <!-- Technologies List Section -->
-        <div class="contain mt-16">
+        <div class="contain mt-5">
           <div class="mb-5">
             <h2 class="text-xl font-semibold">Lets's Connect!</h2>
             <p class="mt-5">Feel free to reach out. Shoot me an <a href="mailto:hi@jay-is-savvy.dev" class="decoration-cuppy underline underline-offset-4">email</a> or <a href="https://calendly.com/jbhv12" class="decoration-cuppy underline underline-offset-4">schedule a call</a>.</p>
