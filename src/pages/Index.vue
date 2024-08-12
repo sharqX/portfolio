@@ -95,7 +95,8 @@
                  text-decoration: none;
                  font-size: 16px;
                  cursor: pointer;">
-    <a href="https://github.com/jbhv12/resume/releases/download/latest/jay-cv.pdf" style="color: black; text-decoration: none;">Download Full CV</a>
+    <!-- <a href="https://github.com/jbhv12/resume/releases/download/latest/jay-cv.pdf" style="color: black; text-decoration: none;">Download Full CV</a> -->
+    <a href="https://calendly.com/jbhv12" target="_blank" style="color: black; text-decoration: none;">Let's Talk!</a>
   </button>   
 
   <span style="margin-left: 10px;
@@ -124,8 +125,8 @@
         <div class="contain mt-5">
           <div class="mb-5">
             <h2 class="text-xl font-semibold">Lets's Connect!</h2>
-            <p class="mt-5">Feel free to reach out. Shoot me an <a href="mailto:hi@jay-is-savvy.dev" class="decoration-cuppy underline underline-offset-4">email</a> or <a href="https://calendly.com/jbhv12" class="decoration-cuppy underline underline-offset-4">schedule a call</a>.</p>
-            <p class="mt-5">Looking for mentorship? Connect with me on <a href="https://adplist.org/mentors/jay-bhavsar" class="decoration-cuppy underline underline-offset-4">ADPList</a> — it's free!</p>
+            <p class="mt-5">Feel free to reach out. Shoot me an <a href="mailto:hi@jay-is-savvy.dev" class="decoration-cuppy underline underline-offset-4">email</a> or <a href="https://calendly.com/jbhv12" target="_blank" class="decoration-cuppy underline underline-offset-4">schedule a call</a>.</p>
+            <p class="mt-5">Looking for mentorship? Connect with me on <a href="https://adplist.org/mentors/jay-bhavsar" target="_blank" class="decoration-cuppy underline underline-offset-4">ADPList</a> — it's free!</p>
           </div>
         </div>
       </main>
