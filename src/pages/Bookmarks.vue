@@ -35,32 +35,18 @@
   <script>
   import Tab from '../components/Tab.vue'
   import Tabs from '../components/Tabs.vue'
-  import Email from '../components/Email.vue'
   export default {
     metaInfo: {
-      title: "Jay the Savvy Dev",
+      title: "The DevOps Engineer♾️",
     },
     components: {
       Tab,
-      Tabs,
-      Email
+      Tabs
     },
     data () {
       return {
         mode: 'dark'
       }
-    },
-    mounted() {
-      // Google Analytics script
-      const analyticsScript = document.createElement('script');
-      analyticsScript.async = true;
-      analyticsScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-83T283YBYQ';
-      document.body.appendChild(analyticsScript);
-  
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-83T283YBYQ');
     },
     methods: {
       changeStyle () {

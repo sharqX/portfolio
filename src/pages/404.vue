@@ -36,9 +36,9 @@ em {
     0 0.1em 0.1em rgba(0, 0, 0, 0.15);
 }
 
-/* @keyframes change_colors {
+@keyframes change_colors {
 0% { color: #5150ea; }
-12% { color: #f24155; }
+12% { color: #f31a34; }
 25% { color: #ef4b7d; }
 37% { color: #fd4a82; }
 50% { color: #fc7f63; }
@@ -46,5 +46,5 @@ em {
 75% { color: #62ccfe; }
 87% { color: #ac39df; }
 100% { color: #aa66f7; }
-} */
+} 
 </style>
