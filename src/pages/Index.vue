@@ -4,7 +4,7 @@
       <main class="mt-1 mb-14">
         <div class="contain flex flex-col gap-7">
           <h1 class="font-semibold text-4xl">
-            Hey <span class="wave" @click="startAnimation">👋</span>, I'm Sharique
+            Hey <span class="wave" @click="startAnimation">👋</span>, I'm Sharique.
           </h1>
           <p class="text-dimGrey leading-8">
           A <span class="text-border">DevOps</span> enthusiast passionate about automating deployments, managing cloud infrastructure, 
@@ -76,10 +76,54 @@
         </div>
 
         <!-- Technologies List Section -->
-        <div class="contain mt-5">
+        <div class="contain mt-16">
           <div class="mb-5">
-            <h2 class="text-xl font-semibold">Lets's Connect!</h2>
-            <p class="mt-5">Feel free to reach out. Shoot me an <a href="rsharique24@gmail.com" class="decoration-cuppy underline underline-offset-4">email</a>.</p>
+            <h2 class="text-xl font-semibold">My Favourite Technologies!</h2>
+          </div>
+ 
+          <div class="text-dimGrey flex flex-col gap-5 md:leading-none leading-8">
+            <p>
+              <span class="decoration-cuppy underline underline-offset-4">Cloud Platform:</span>
+              Amazon Web Services
+              <app-icon class="pl-2" icon="fab fa-aws" size="lg"></app-icon>
+            </p>
+
+            <p>
+              <span class="decoration-cuppy underline underline-offset-4">Infrastructure as Code (IaC):</span>
+              Terraform
+              <img :src="TerraformIcon" alt="Terraform Icon" class="w-6 h-6 mr-2" />
+            </p>
+
+            <p>
+              <span class="decoration-cuppy underline underline-offset-4">Containerization:</span>
+              Docker
+              <app-icon class="pr-2" icon="fab fa-docker" size="lg"></app-icon>
+              Kubernetes
+            </p>
+
+            <p>
+              <span class="decoration-cuppy underline underline-offset-4">CI/CD:</span>
+              GitHub Actions
+              <app-icon class="pr-2" icon="fab fa-node" size="lg"></app-icon>
+              Jenkins
+              <app-icon class="pr-2" icon="fab fa-jenkins" size="lg"></app-icon>
+            </p>
+
+            <p>
+              <span class="decoration-cuppy underline underline-offset-4">Operating System:</span>
+              Linux
+              <app-icon class="pr-2" icon="fab fa-linux" size="lg"></app-icon>
+              Windows
+              <app-icon class="pr-2" icon="fab fa-windows" size="lg"></app-icon>
+            </p>
+
+            <p>
+              <span class="decoration-cuppy underline underline-offset-4">Languages:</span>
+              Python
+              <app-icon class="pr-2" icon="fab fa-python" size="lg"></app-icon>
+              C++
+              <!-- <app-icon class="pr-2" icon="database" size="lg"></app-icon> -->
+            </p>
           </div>
         </div>
       </main>
@@ -90,13 +134,15 @@
 <script>
 import Tab from '../components/Tab.vue'
 import Tabs from '../components/Tabs.vue'
+import TerraformIcon from '@/assets/icons/terraform-svgrepo-com.svg'
 export default {
   metaInfo: {
     title: "Home",
   },
   components: {
     Tab,
-    Tabs
+    Tabs,
+    TerraformIcon
   },
   data () {
     return {
