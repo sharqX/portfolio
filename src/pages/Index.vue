@@ -24,11 +24,11 @@
             </a>
 
             <a href="https://x.com/zarar_sharique" target="_blank">
-              <app-icon icon="fab fa-twitter" size="lg"></app-icon>
+              <app-icon icon="fab fa-x-twitter" size="lg"></app-icon>
             </a>
 
             <a
-              href="https://discordapp.com/users/sharqz"
+              href="https://discord.gg/PFGd5NsjbE"
               target="_blank"
             >
               <app-icon icon="fab fa-discord" size="lg"></app-icon>
@@ -92,7 +92,7 @@ import Tab from '../components/Tab.vue'
 import Tabs from '../components/Tabs.vue'
 export default {
   metaInfo: {
-    title: "",
+    title: "Home",
   },
   components: {
     Tab,
@@ -109,6 +109,25 @@ export default {
       ]
     }
   },
+  mounted() {
+
+    
+  },
+  methods: {
+    changeStyle () {
+      if (this.mode === 'dark') {
+        this.mode = 'light'
+      } else {
+        this.mode = 'dark'
+      }
+    },
+    startAnimation() {
+      this.isAnimating = true;
+      setTimeout(() => {
+        this.isAnimating = false;
+      }, 1700); 
+    }
+  }
 };
 </script>
 
@@ -135,9 +154,6 @@ export default {
   animation-play-state: running;
 }
 
-.wave.running {
-  animation-play-state: running;
-}
 </style>
 
 <page-query>
