@@ -10,7 +10,8 @@
 
     <footer class="contain flex justify-between mb-5 text-sl text-dimGreyAlt">
       <p>
-        <span>&copy; Sharique Zarar Rahman 2025 🚀</span>
+        <app-icon class="pr-2" icon="fas fa-copyright" size="sm"></app-icon>
+        <span>Sharique Zarar Rahman 2025 🚀</span>
       </p>
       <p class="flex items-center space-x-2">
         Made With <app-icon class="pl-1" icon="fab fa-vuejs" size="lg"></app-icon> <app-icon class="pl-1" icon="fab fa-js" size="lg"></app-icon>
