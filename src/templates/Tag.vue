@@ -38,7 +38,7 @@ export default {
 };
 </script>
 
-<page-query>
+<!-- <page-query>
 query Tag ($id: ID!) {
   tag: tag (id: $id) {
     title
@@ -56,4 +56,4 @@ query Tag ($id: ID!) {
     }
   }
 }
-</page-query>
+</page-query> -->

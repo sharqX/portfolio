@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: "Sharique♾️",
-  icon: "./src/rocketbg.png",
+  icon: "./src/logo.png",
 
   plugins: [
     // Tailwind
@@ -17,34 +17,5 @@ module.exports = {
         mainCssFile: "./src/assets/css/main.css",
       },
     },
-
-    // Source file
-    {
-      use: "@gridsome/source-filesystem",
-      options: {
-        path: "./content/**/*.md",
-        typeName: "Articles",
-        remark: {
-          plugins: [
-            [
-              "gridsome-plugin-remark-shiki",
-              { theme: "nord", skipInline: false },
-            ],
-          ],
-        },
-
-        refs: {
-          tags: {
-            typeName: "Tag",
-            create: true,
-          },
-        },
-      },
-    },
   ],
-
-  templates: {
-    Articles: "/article/:title",
-    Tag: "/tag/:id",
-  },
 };

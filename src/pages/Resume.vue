@@ -7,10 +7,8 @@
               My Resume
             </h1>
               <p class="text-dimGrey leading-8">Here you can download my resume.</p>
+              <a></a>
           </div>
-          
-
-          
         </main>
       </transition>
     </Layout>

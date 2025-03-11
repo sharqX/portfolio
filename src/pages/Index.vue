@@ -204,7 +204,7 @@ export default {
 
 </style>
 
-<page-query>
+<!-- <page-query>
 query {
   posts: allArticles(perPage: 3) {
     edges {
@@ -217,4 +217,4 @@ query {
     }
   }
 }
-</page-query>
+</page-query> -->
