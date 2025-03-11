@@ -37,23 +37,3 @@ export default {
   },
 };
 </script>
-
-<!-- <page-query>
-query Tag ($id: ID!) {
-  tag: tag (id: $id) {
-    title
-    belongsTo {
-      totalCount
-      edges {
-        node {
-          ...on Articles {
-            title
-            date
-            path
-          }
-        }
-      }
-    }
-  }
-}
-</page-query> -->

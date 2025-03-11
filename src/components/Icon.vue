@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
 
 <svg v-if="name==='Terraform'" " xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 256 291">
   <path fill="#fff" d="M176.485 188.994L256 143.127V51.249l-79.515 45.963z"/>
@@ -11,4 +11,4 @@
 export default {
     props: ['name']
 }
-</script>
+</script> -->
