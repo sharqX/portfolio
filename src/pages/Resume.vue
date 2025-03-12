@@ -7,7 +7,6 @@
               My Resume
             </h1>
               <p class="text-dimGrey leading-8">Here you can download my resume.</p>
-              <a></a>
           </div>
         </main>
       </transition>
@@ -17,13 +16,15 @@
   <script>
   import Tab from '../components/Tab.vue'
   import Tabs from '../components/Tabs.vue'
+  import pdf from 'vue-pdf'
   export default {
     metaInfo: {
       title: "Resume",
     },
     components: {
       Tab,
-      Tabs
+      Tabs,
+      pdf
     },
     data () {
       return {
