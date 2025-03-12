@@ -5,9 +5,11 @@
           <div class="contain flex flex-col gap-7">
             <h1 class="font-semibold text-4xl">
               My Resume
+              <button style="background-color:#ffffff;border:none;color:black;padding:5px 10px;
+              text-align:center;text-decoration:underline wavy red;font-size:16px;cursor:pointer; float:inline-end;">
+              <a href="https://drive.usercontent.google.com/uc?id=1Lkty0SIltRG8WMyybhFn4ZKok_IHkqNH&export=download">Download</a></button>
             </h1>
-              <!-- <p class="text-dimGrey leading-8">Here you can download my resume.</p> -->
-              <iframe src="https://drive.google.com/file/d/1Lkty0SIltRG8WMyybhFn4ZKok_IHkqNH/preview" width="1000" height="1000"/> 
+              <iframe src="https://drive.google.com/file/d/1Lkty0SIltRG8WMyybhFn4ZKok_IHkqNH/preview" width="1150" height="1000"/> 
           </div>
         </main>
       </transition>
