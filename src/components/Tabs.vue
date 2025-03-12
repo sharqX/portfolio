@@ -78,7 +78,7 @@ ul.tabs__header > li.tab__selected::before {
 ul.tabs__header > li.tab__selected {
   border-radius: 10px 10px 0 0;
   border-right: 8px solid transparent;
-  color: #D37EA8
+  color: #6EACDA
 }
 
   .tab-content {
