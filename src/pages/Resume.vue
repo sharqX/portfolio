@@ -6,7 +6,8 @@
             <h1 class="font-semibold text-4xl">
               My Resume
             </h1>
-              <p class="text-dimGrey leading-8">Here you can download my resume.</p>
+              <!-- <p class="text-dimGrey leading-8">Here you can download my resume.</p> -->
+              <iframe src="https://drive.google.com/file/d/1Lkty0SIltRG8WMyybhFn4ZKok_IHkqNH/preview" width="1000" height="1000"/> 
           </div>
         </main>
       </transition>
@@ -16,7 +17,6 @@
   <script>
   import Tab from '../components/Tab.vue'
   import Tabs from '../components/Tabs.vue'
-  import pdf from 'vue-pdf'
   export default {
     metaInfo: {
       title: "Resume",
@@ -24,7 +24,6 @@
     components: {
       Tab,
       Tabs,
-      pdf
     },
     data () {
       return {
