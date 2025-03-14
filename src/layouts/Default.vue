@@ -3,7 +3,7 @@
     <header class="contain flex justify-end items-center h-20">
       <nav class="hidden md:flex items-center gap-3 text-[#03C988]">
         <g-link class="hover:underline border-r-2 border-dashed border-[#03C988] pr-4" to="/">Home</g-link>
-        <g-link class="hover:underline" to="/resume/">Resume</g-link>
+        <g-link class="hover:underline" to="/resume">Resume</g-link>
       </nav>
     </header>
     <slot />
