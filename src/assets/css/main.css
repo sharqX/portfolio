@@ -53,27 +53,3 @@ body {
 .text-border {
   @apply bg-[#31363B] px-1 rounded-md
 }
-
-/* Blog styling */
-
-strong {
-  @apply border-dotted border-2 rounded-sm px-1 border-cuppy bg-[#131313]
-}
-
-h3 {
-  @apply text-2xl font-bold decoration-cuppy underline underline-offset-8
-}
-
-pre {
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-  
-  @apply rounded-sm overflow-x-scroll pl-5
-}
-
-li>a {
-  @apply decoration-cuppy underline underline-offset-8
-}
-
-ul>li {
-  @apply list-inside list-disc
-}

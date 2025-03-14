@@ -11,6 +11,12 @@
           and optimizing system reliability.I have hands-on experience with AWS, Kubernetes, Terraform, and CI/CD pipelines. 
           I love solving complex infrastructure challenges and continuously improving system performance.            
           </p>
+          <div class="gap-2">
+            <a class="pill-outline">
+                <div class="circle"></div>
+                #OPENTOWORK
+            </a>
+          </div>
           <div class="flex items-center gap-5 text-[#FFFFFF]">
             <p>Find me on:</p>
 
@@ -142,7 +148,6 @@ export default {
   components: {
     Tab,
     Tabs,
-    // Icon
   },
   data () {
     return {
@@ -178,6 +183,36 @@ export default {
 </script>
 
 <style>
+ .pill-outline {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 5px 15px;
+      border: 1.5px solid white;
+      border-radius: 25px;
+      font-size: 16px;
+      color: white;
+      text-decoration: none;
+      width: fit-content;
+  }
+  .circle {
+      width: 15px;
+      height: 15px;
+      background-color: lime;
+      border-radius: 50%;
+      box-shadow: 0 0 5px lime;
+      animation: glow 0.5s infinite alternate;
+  }
+  @keyframes glow {
+      0% {
+          box-shadow: 0 0 5px lime;
+      }
+      100% {
+          box-shadow: 0 0 50px lime;
+      }
+}
+
 .wave {
   animation-name: wave-animation;
   animation-duration: 2.5s;
