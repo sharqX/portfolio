@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 html {
-  font-family: 'consolas' , monospace;
+  font-family: 'consolas', monospace;
 }
 
 body {
-    background-color: #000000;
-    color: #FFFFFF;
+  background-color: #000000;
+  color: #FFFFFF;
 
-    @apply antialiased
+  @apply antialiased
 }
 
 /* Scrollbar */

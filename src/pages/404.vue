@@ -37,14 +37,40 @@ em {
 }
 
 @keyframes change_colors {
-0% { color: #5150ea; }
-12% { color: #f31a34; }
-25% { color: #ef4b7d; }
-37% { color: #fd4a82; }
-50% { color: #fc7f63; }
-62% { color: #6665ed; }
-75% { color: #62ccfe; }
-87% { color: #ac39df; }
-100% { color: #aa66f7; }
-} 
+  0% {
+    color: #5150ea;
+  }
+
+  12% {
+    color: #f31a34;
+  }
+
+  25% {
+    color: #ef4b7d;
+  }
+
+  37% {
+    color: #fd4a82;
+  }
+
+  50% {
+    color: #fc7f63;
+  }
+
+  62% {
+    color: #6665ed;
+  }
+
+  75% {
+    color: #62ccfe;
+  }
+
+  87% {
+    color: #ac39df;
+  }
+
+  100% {
+    color: #aa66f7;
+  }
+}
 </style>
