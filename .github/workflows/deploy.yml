@@ -17,9 +17,12 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
+      # -
+      #   name: Build default.conf
+      #   run: echo "${{ secrets.DEFAULT_CONF }}" | base64 --decode > default.conf
       -
-        name: Build default.conf
-        run: echo "${{ secrets.DEFAULT_CONF }}" | base64 --decode > default.conf
+        name: Check path
+        run: pwd
       -
         name: Build and push
         uses: docker/build-push-action@v6
