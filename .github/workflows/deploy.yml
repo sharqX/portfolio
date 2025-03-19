@@ -21,11 +21,11 @@ jobs:
         name: Build default.conf
         run: echo "${{ secrets.DEFAULT_CONF }}" | base64 --decode > /home/runner/work/portfolio/portfolio/default.conf
       -
-        name: Check path
-        run: pwd
-      -
-        name: Build and push
-        uses: docker/build-push-action@v6
-        with:
-          push: true
-          tags: thesharqx/portfolio
+        name: Check contents
+        run: ls -la
+      # -
+      #   name: Build and push
+      #   uses: docker/build-push-action@v6
+      #   with:
+      #     push: true
+      #     tags: thesharqx/portfolio
