@@ -21,11 +21,9 @@ jobs:
         name: Build default.conf
         run: echo "${{ secrets.DEFAULT_CONF }}" | base64 --decode > /home/runner/work/portfolio/portfolio/default.conf
       -
-        name: Check config
-        run: cat default.conf
-      # -
-      #   name: Build and push
-      #   uses: docker/build-push-action@v6
-      #   with:
-      #     push: true
-      #     tags: thesharqx/portfolio
+        name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          push: true
+          context: /home/runner/work/portfolio/portfolio
+          tags: thesharqx/portfolio
