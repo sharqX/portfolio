@@ -1,12 +1,14 @@
-version: "3.6"
+version: '3.8'
 
 services:
-  website:
-    restart: unless-stopped
+  my-portfolio:
     build: .
+    container_name: my-portfolio
     volumes:
       - ./src:/app/src
       - ./dist:/app/dist
+    ports:
+      - 8080:8080
 
   nginx:
     restart: unless-stopped
@@ -17,4 +19,4 @@ services:
     volumes:
       - ./default.conf:/etc/nginx/conf.d/default.conf
     depends_on:
-      - website
+      - my-portfolio
