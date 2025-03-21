@@ -29,7 +29,7 @@ jobs:
           tags: thesharqx/portfolio
 
       - name: Deploy on EC2
-        uses: appleboy/ssh-actions@master
+        uses: appleboy/ssh-action@v1
         with:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
@@ -37,4 +37,3 @@ jobs:
           working-directory: /home/ubuntu/portfolio
           scripts:  |
             ls
-          
