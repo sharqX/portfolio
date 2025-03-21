@@ -1,4 +1,4 @@
-name: ci
+name: CI/CD Pipeline
 
 on:
   push:
@@ -27,3 +27,14 @@ jobs:
           push: true
           context: /home/runner/work/portfolio/portfolio
           tags: thesharqx/portfolio
+
+      - name: Deploy on EC2
+        uses: appleboy/ssh-actions@master
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.KEY }}
+          working-directory: /home/ubuntu/portfolio
+          scripts:  |
+            ls
+          
