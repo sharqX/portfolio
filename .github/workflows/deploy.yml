@@ -34,6 +34,10 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
-          working-directory: /home/ubuntu/portfolio
-          script:  |
-            ls
+          script: |
+            cd /home/ubuntu/portfolio
+            sudo docker-compose stop
+            sudo docker-compose rm -f
+            sudo docker-compose pull
+            sudo docker-compose up -d
+            sudo docker image prune -af
