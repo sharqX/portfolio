@@ -18,9 +18,6 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
-        name: Build default.conf
-        run: echo "${{ secrets.DEFAULT_CONF }}" | base64 --decode > /home/runner/work/portfolio/portfolio/default.conf
-      -
         name: Build and push
         uses: docker/build-push-action@v6
         with:
@@ -36,6 +33,8 @@ jobs:
           key: ${{ secrets.KEY }}
           script: |
             cd /home/ubuntu/portfolio
+            git pull
+            echo "${{ secrets.DEFAULT_CONF }}" | base64 --decode > default.conf
             docker compose stop
             docker compose rm -f
             docker compose pull
