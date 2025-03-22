@@ -185,8 +185,15 @@ export default {
     }
   },
   mounted() {
+    const analyticsScript = document.createElement('script');
+    analyticsScript.async = true;
+    analyticsScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-P4W5E7FPB0';
+    document.body.appendChild(analyticsScript);
 
-
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P4W5E7FPB0');
   },
   methods: {
     changeStyle() {
