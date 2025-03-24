@@ -1,6 +1,6 @@
 # My Portfolio
 *This is a static website which serves as my personal porfolio.*
-![Screenshot](static/Portfolio%20Website.png)
+![Screenshot](screenshot/Portfolio%20Website.png)
 
 ## Technologies
  - [**Vue.js**](https://vuejs.org/)
