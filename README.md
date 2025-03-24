@@ -1,50 +1,37 @@
-# Personal Portfolio Website
+# My Portfolio
+*This is a static website which serves as my personal porfolio.*
+![Screenshot](static/Portfolio%20Website.png)
 
-This is a static website built with Vue.js and Gridsome. It serves as a personal portfolio to showcase my work.
-
-## Technologies Used
-
-- Vue.js
-- Gridsome
-- Docker
-- GitHub Actions
-- Cloudflare Pages
+## Technologies
+ - [**Vue.js**](https://vuejs.org/)
+ - [**Gridsome**](https://gridsome.org/)
+ - [**Docker and Docker Compose**](https://www.docker.com/)
+ - [**Github Actions**](https://github.com/features/actions)
+ - [**AWS Elastic Compute Cloud**](https://aws.amazon.com/ec2/)
 
 ## Getting Started
-
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
-
 - Docker and docker-compose installed on your local system.
 
 ### Installation and Setup
-
 1. Clone the repository
-    ```bash
-    git clone https://github.com/yourusername/your-repo-name.git
     ```
-
+    git clone https://github.com/sharqX/portfolio.git
+    ```
 2. Navigate to the project directory
-    ```bash
-    cd your-repo-name
     ```
-
+    cd portfolio
+    ```
 3. Run Docker Compose to build and start the application
-    ```bash
+    ```
     docker-compose up
     ```
+4. Access the website locally in your browser at `localhost:8080`
 
-4. Access the website locally in your browser at `localhost:8082`
-
-## Deployment
-
-This project is deployed using Cloudflare Pages via GitHub Actions. Whenever changes are pushed to the `main` branch of the GitHub repository, GitHub Actions automatically builds the project and deploys the contents of the `dist` directory to Cloudflare Pages.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a pull request or open an issue for any bugs, feature requests, or suggestions.
+### Deployment
+This project is deloyed with `Github Actions` which automatically builds the docker image and pushes it to `Docker Hub`. Then logs in to the `AWS EC2` and pulls the latest images and deploys it using `Docker Compose` whenever changes are push to the `main` branch.
 
 ## Acknowledgments
-
-- This project is a fork of [dev-adewale/portfolio](https://github.com/dev-adewale/portfolio)
+- This project is a fork of <ins>[jbhv12/portfolio.git](https://github.com/jbhv12/portfolio.git)</ins>
