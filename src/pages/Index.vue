@@ -73,6 +73,15 @@
             <tabs :mode="mode">
               <tab title="PearlThoughts" position="DevOps Engineer Intern" company="PearlThoughts"
                 companyURL="https://pearlthoughts.com/" :itemList="PearlThoughtsItemList" />
+
+                <tab title="Assam Police Radio Organisation" position="Internship Trainee" company="Assam Police Radio Organisation (APRO)"
+                companyURL="https://police.assam.gov.in/portlet-innerpage/assam-police-radio-organisation-apro" :itemList="APROItemList" />
+
+                <tab title="OLatus" position="Intern" company="OLatus"
+                companyURL="https://olatus.com/" :itemList="OLatusItemList" />
+
+                <tab title="BSNL" position="Intern" company="BSNL"
+                companyURL="https://www.bsnl.co.in/" :itemList="BSNLItemList" />
             </tabs>
           </div>
 
@@ -177,11 +186,30 @@ export default {
     return {
       mode: 'dark',
       PearlThoughtsItemList: [
-        'Configured essential AWS components, including EC2, VPC, Security Groups, Application Load Balancer, and IAM Roles, to ensure secure and scalable deployment.',
-        'Deployed a web application using Strapi and React on AWS ECS Fargate utilizing Terraform, implementing Infrastructure as Code (IaC) for efficient resource management.',
-        'Utilized Docker to containerize the application and pushed the image to AWS ECR, reducing deployment time by 30%.',
-        'Developed a CI/CD pipeline with GitHub Actions, achieving a 60% faster deployment process and a 20% increase in successful deployments.'
+        'Configured essential AWS components, including EC2, VPC, Security Groups, Application Load Balancer, and IAM Roles, to ensure secure and scalable deployment',
+        'Deployed a web application using Strapi and React on AWS ECS Fargate utilizing Terraform, implementing Infrastructure as Code (IaC) for efficient resource management',
+        'Utilized Docker to containerize the application and pushed the image to AWS ECR, reducing deployment time by 30%',
+        'Developed a CI/CD pipeline with GitHub Actions, achieving a 60% faster deployment process and a 20% increase in successful deployments'
+      ],
+
+      APROItemList: [
+        'Acquired expertise in radio communication systems, operating and troubleshooting a widerange of equipment, resulting in enhanced team communication and reduced downtime by40%',
+        'Designed and deployed an Inverted-V antenna with an operating frequencies of 7Mhz,14Mhz and 21Mhz'
+      ],
+
+      OLatusItemList: [
+        'Developed computer vision software for an autonomous robot using OpenCV, enabling real-time perception and analysis',
+        'Implemented object detection algorithms to identify and track objects, improving the robot’s decision-making capabilities',
+        'Optimized image processing techniques for noise reduction, edge detection, and feature extraction, enhancing visual recognition accuracy',
+        'Acquired strong robotics expertise, integrating computer vision with autonomous navigation and control mechanisms'
+      ],
+      BSNLItemList: [
+        'Gained a strong foundation in telecom services, understanding communication operations, including network infrastructure, signal transmission, routing, and protocols',
+        'Studied telecom network architectures, including cellular, fiber-optic, and satellite communication systems, enhancing knowledge of connectivity solutions',
+        'Explored signal processing techniques, learning about modulation, error correction, and data transmission methods for efficient communication',
+        'Developed an understanding of telecom protocols, such as TCP/IP, VoIP, and LTE, ensuring seamless and secure data exchange across networks'
       ]
+
     }
   },
   mounted() {
