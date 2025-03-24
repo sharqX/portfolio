@@ -30,7 +30,7 @@ These instructions will get you a copy of the project up and running on your loc
     ```
 4. Access the website locally in your browser at `localhost:8080`
 
-### Deployment
+## Deployment
 This project is deloyed with `Github Actions` which automatically builds the docker image and pushes it to `Docker Hub`. Then logs in to the `AWS EC2` and pulls the latest images and deploys it using `Docker Compose` whenever changes are push to the `main` branch.
 
 ## Acknowledgments
