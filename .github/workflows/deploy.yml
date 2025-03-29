@@ -32,8 +32,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           script: |
-            cd /home/ubuntu/portfolio
-            git pull
+            cd /home/${{ secrets.USERNAME }}/portfolio
             echo "${{ secrets.DEFAULT_CONF }}" | base64 --decode > default.conf
             docker compose stop
             docker compose rm -f
