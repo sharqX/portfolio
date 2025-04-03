@@ -82,14 +82,16 @@
               <tab title="PearlThoughts" position="DevOps Engineer Intern" company="PearlThoughts"
                 companyURL="https://pearlthoughts.com/" :itemList="PearlThoughtsItemList" />
 
-                <tab title="Assam Police Radio Organisation" position="Internship Trainee" company="Assam Police Radio Organisation (APRO)"
-                companyURL="https://police.assam.gov.in/portlet-innerpage/assam-police-radio-organisation-apro" :itemList="APROItemList" />
+              <tab title="Assam Police Radio Organisation" position="Internship Trainee"
+                company="Assam Police Radio Organisation (APRO)"
+                companyURL="https://police.assam.gov.in/portlet-innerpage/assam-police-radio-organisation-apro"
+                :itemList="APROItemList" />
 
-                <tab title="OLatus" position="Intern" company="OLatus"
-                companyURL="https://olatus.com/" :itemList="OLatusItemList" />
+              <tab title="OLatus" position="Intern" company="OLatus" companyURL="https://olatus.com/"
+                :itemList="OLatusItemList" />
 
-                <tab title="BSNL" position="Intern" company="BSNL"
-                companyURL="https://www.bsnl.co.in/" :itemList="BSNLItemList" />
+              <tab title="BSNL" position="Intern" company="BSNL" companyURL="https://www.bsnl.co.in/"
+                :itemList="BSNLItemList" />
             </tabs>
           </div>
 
@@ -227,7 +229,7 @@ export default {
     document.body.appendChild(analyticsScript);
 
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'G-P4W5E7FPB0');
   },
