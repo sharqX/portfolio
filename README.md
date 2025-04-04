@@ -34,4 +34,4 @@ These instructions will get you a copy of the project up and running on your loc
 This project is deployed with `Github Actions` which automatically builds the docker image and pushes it to `Docker Hub`. Then logs in to the `AWS EC2` instance and pulls the latest images and deploys it using `Docker Compose` whenever changes are pushed to the `main` branch.
 
 ## Acknowledgments
-- This project is a fork of <ins>[jbhv12/portfolio.git](https://github.com/jbhv12/portfolio.git)</ins>
+- This project is a fork of <ins>[jbhv12/portfolio.git](https://github.com/jbhv12/portfolio.git)</ins> 
