@@ -23,7 +23,7 @@ jobs:
         with:
           push: true
           context: /home/runner/work/portfolio/portfolio
-          tags: thesharqx/portfolio:${{ github.sha }}
+          tags: thesharqx/portfolio
 
       - name: Deploy on EC2
         uses: appleboy/ssh-action@v1

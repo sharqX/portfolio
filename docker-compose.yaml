@@ -1,6 +1,6 @@
 services:
   my-portfolio:
-    image: thesharqx/portfolio:latest
+    image: thesharqx/portfolio
     container_name: my-portfolio
     volumes:
       - ./src:/app/src
