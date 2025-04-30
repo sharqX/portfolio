@@ -48,6 +48,15 @@
           <div class="contain mt-16 flex flex-col gap-3 font-semibold">
             <h2 class="text-xl font-semibold">Projects</h2>
             <div class="flex flex-col gap-3">
+
+              <article class="flex md:flex-row flex-col md:items-center items-start md:gap-10 gap-0 md:pb-3 pb-5">
+                <p class="text-[#4D4C7D]">30 Apr 2025</p>
+                <a href="https://shariques.notion.site/Observability-14a79f1ca8e480d0a341c25fa0a515e9"
+                  class="text-[#FFFFFF] decoration-[#6EACDA] underline underline-offset-4">
+                  Observability
+                </a>
+              </article>
+
               <article class="flex md:flex-row flex-col md:items-center items-start md:gap-10 gap-0 md:pb-3 pb-5">
                 <p class="text-[#4D4C7D]">30 Mar 2025</p>
                 <a href="https://shariques.notion.site/Portfolio-1bd79f1ca8e480c0a723e2cc1aff9784"
