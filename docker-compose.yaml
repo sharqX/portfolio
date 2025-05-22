@@ -1,6 +1,6 @@
 services:
   my-portfolio:
-    image: thesharqx/portfolio
+    image: thesharqx/portfolio:latest
     container_name: my-portfolio
     volumes:
       - ./src:/app/src
@@ -21,10 +21,12 @@ services:
     depends_on:
       - my-portfolio
       
-  # certbot:
-  #   image: certbot/certbot
-  #   container_name: certbot
-  #   volumes: 
-  #     - ./certbot/conf:/etc/letsencrypt
-  #     - ./certbot/www:/var/www/certbot
-  #   command: certonly --webroot -w /var/www/certbot --force-renewal --email shariquerahman24@gmail.com -d sharique.tech --agree-tos
+  certbot:
+    image: certbot/certbot
+    container_name: certbot
+    profiles:
+      - certonly
+    volumes: 
+      - ./certbot/conf:/etc/letsencrypt
+      - ./certbot/www:/var/www/certbot
+    command: certonly --webroot -w /var/www/certbot --force-renewal --email shariquerahman24@gmail.com -d sharique.tech --agree-tos
