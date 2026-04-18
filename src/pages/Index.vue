@@ -4,7 +4,7 @@
         <main class="mt-1 mb-14">
           <div class="contain flex flex-col gap-7">
             <h1 class="font-semibold text-4xl">
-              Hey <span class="wave" @click="startAnimation">👋</span>, I'm Sharique.
+              Hey <span :key="waveKey" class="wave" @click="startAnimation">👋</span>, I'm Sharique.
             </h1>
             <p class="text-[#FFFFFF] leading-8">
               A <span class="text-border">DevOps</span> enthusiast passionate about automating deployments, managing
@@ -14,10 +14,10 @@
               I love solving complex infrastructure challenges and continuously improving system performance.
             </p>
             <div class="gap-2">
-              <a class="pill-outline">
-                <div class="circle"></div>
+              <span class="pill-outline">
+                <span class="circle"></span>
                 #OPENTOWORK
-              </a>
+              </span>
             </div>
             <div class="flex items-center gap-5 text-[#FFFFFF]">
               <p>Find me on:</p>
@@ -52,6 +52,7 @@
               <article class="flex md:flex-row flex-col md:items-center items-start md:gap-10 gap-0 md:pb-3 pb-5">
                 <p class="text-[#4D4C7D]">30 Apr 2025</p>
                 <a href="https://shariques.notion.site/Observability-14a79f1ca8e480d0a341c25fa0a515e9"
+                  target="_blank" rel="noopener noreferrer"
                   class="text-[#FFFFFF] decoration-[#6EACDA] underline underline-offset-4">
                   Observability
                 </a>
@@ -60,14 +61,16 @@
               <article class="flex md:flex-row flex-col md:items-center items-start md:gap-10 gap-0 md:pb-3 pb-5">
                 <p class="text-[#4D4C7D]">30 Mar 2025</p>
                 <a href="https://shariques.notion.site/Portfolio-1bd79f1ca8e480c0a723e2cc1aff9784"
+                  target="_blank" rel="noopener noreferrer"
                   class="text-[#FFFFFF] decoration-[#6EACDA] underline underline-offset-4">
-                  Porfolio
+                  Portfolio
                 </a>
               </article>
 
               <article class="flex md:flex-row flex-col md:items-center items-start md:gap-10 gap-0 md:pb-3 pb-5">
                 <p class="text-[#4D4C7D]">10 Oct 2024</p>
                 <a href="https://shariques.notion.site/Microservices-Application-11479f1ca8e48093b458db91397835d9"
+                  target="_blank" rel="noopener noreferrer"
                   class="text-[#FFFFFF] decoration-[#6EACDA] underline underline-offset-4">
                   Stan's Robot Shop
                 </a>
@@ -76,6 +79,7 @@
               <article class="flex md:flex-row flex-col md:items-center items-start md:gap-10 gap-0 md:pb-3 pb-5">
                 <p class="text-[#4D4C7D]">08 Aug 2024</p>
                 <a href="https://shariques.notion.site/MERN-Deployment-a1b0904b3c954b64a381a666854e429a"
+                  target="_blank" rel="noopener noreferrer"
                   class="text-[#FFFFFF] decoration-[#6EACDA] underline underline-offset-4">
                   Three-tier Web Application
                 </a>
@@ -204,6 +208,7 @@ export default {
   data() {
     return {
       mode: 'dark',
+      waveKey: 0,
       PearlThoughtsItemList: [
         'Configured essential AWS components, including EC2, VPC, Security Groups, Application Load Balancer, and IAM Roles, to ensure secure and scalable deployment',
         'Deployed a web application using Strapi and React on AWS ECS Fargate utilizing Terraform, implementing Infrastructure as Code (IaC) for efficient resource management',
@@ -231,30 +236,12 @@ export default {
 
     }
   },
-  mounted() {
-    const analyticsScript = document.createElement('script');
-    analyticsScript.async = true;
-    analyticsScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-P4W5E7FPB0';
-    document.body.appendChild(analyticsScript);
-
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-P4W5E7FPB0');
-  },
   methods: {
     changeStyle() {
-      if (this.mode === 'dark') {
-        this.mode = 'light'
-      } else {
-        this.mode = 'dark'
-      }
+      this.mode = this.mode === 'dark' ? 'light' : 'dark';
     },
     startAnimation() {
-      this.isAnimating = true;
-      setTimeout(() => {
-        this.isAnimating = false;
-      }, 1700);
+      this.waveKey += 1;
     }
   }
 };

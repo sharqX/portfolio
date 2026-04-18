@@ -11,7 +11,7 @@
     <footer class="contain flex justify-between mb-5 text-sl text-[#FFFFFF]">
       <p>
         <app-icon class="pr-2" icon="fas fa-copyright" size="sm"></app-icon>
-        <span>Sharique Zarar Rahman 2025 </span>
+        <span>Sharique Zarar Rahman 2026 </span>
       </p>
       <p class="flex items-center space-x-2">
         Made With <app-icon class="pl-1" icon="fab fa-vuejs" size="lg"></app-icon> <app-icon class="pl-1"
@@ -32,11 +32,22 @@
 </template>
 
 <script>
+const GA_MEASUREMENT_ID = 'G-P4W5E7FPB0';
+
 export default {
-  data() {
-    return {
-      showMenu: true,
-    };
+  mounted() {
+    if (typeof window === 'undefined' || window.__gaLoaded) return;
+    window.__gaLoaded = true;
+
+    const analyticsScript = document.createElement('script');
+    analyticsScript.async = true;
+    analyticsScript.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+    document.body.appendChild(analyticsScript);
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('config', GA_MEASUREMENT_ID);
   },
 };
 </script>

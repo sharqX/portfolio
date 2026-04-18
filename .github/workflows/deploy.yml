@@ -22,8 +22,8 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          context: /home/runner/work/portfolio/portfolio
-          tags: thesharqx/portfolio
+          context: .
+          tags: thesharqx/portfolio:latest
 
       - name: Deploy on EC2
         uses: appleboy/ssh-action@v1
@@ -33,7 +33,7 @@ jobs:
           key: ${{ secrets.KEY }}
           script: |
             cd /home/${{ secrets.USERNAME }}/portfolio
-            echo "${{ secrets.NGINX_CONF }}" | base64 --decode > ./nginx.conf
+            printf '%s' "${{ secrets.NGINX_CONF }}" | base64 -d > ./nginx.conf
             docker compose stop
             docker compose rm -f
             docker compose pull

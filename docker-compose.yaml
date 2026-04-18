@@ -2,9 +2,7 @@ services:
   my-portfolio:
     image: thesharqx/portfolio:latest
     container_name: my-portfolio
-    volumes:
-      - ./src:/app/src
-      - ./dist:/app/dist
+    restart: unless-stopped
     expose:
       - 8080
 
