@@ -26,8 +26,10 @@ export default {
       tabs: []         // all of the tabs
     }
   },
-  mounted() {
+  created() {
     this.tabs = this.$children
+  },
+  mounted() {
     this.selectTab(0)
   },
   methods: {
